@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 720px;
+    height: 600px;
+    border: solid rgb(9, 9, 116);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+h1{
+    color: rgb(11, 11, 75);
+}
+
+.div-shaping{
+    min-width: 180px;
+    min-height: 150px;
+    border: 1px solid rgb(9, 9, 116);
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+}
+
+#game-result{
+    width: 400px;
+    height: 150px;
+    background-color: #d3d1cddc;
+    border: solid rgb(11, 11, 75);;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1;
+    margin-top: -500px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Neucha, sans-serif;
+    font-size: 20px;
+}
+
+#btn-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#btn-bar button{
+  height: 30px;
+  display: none;
+  align-items: center;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgb(11, 11, 75) 15px 28px 25px -20px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  font-family: Neucha, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#game-result button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#game-result button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
